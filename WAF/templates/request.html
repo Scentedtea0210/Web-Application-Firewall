@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Request {{id}}
+        </title>
+    </head>
+
+    <body>
+        <h3>Request Detail</h3>
+        <pre>Timestamp: {{log.Timestamp}}</pre>
+        <pre>SourceIP: {{log.SourceIP}}</pre>
+        <pre>Operation: {{log.Operation}}</pre>
+        <h3>Request</h3>
+        <pre>{{log.Method}} {{log.Url}} {{log.Protocol}}</pre>
+        {% for key,value in log.Header.items()%}
+        <pre>{{key}}: {{value}}</pre>
+        {% endfor %}
+        <pre>{{log.body}}</pre>
+        <h3>Attack Message</h3>
+        <h4>Threat Type -> Location</h4>
+        {% for key,value in log.ThreatType.items()%}
+        <pre>{{value.strip().split(':')[0]}} -> {{value.strip().split(':')[1]+':'+key}}</pre>
+        {% endfor %}
+    </body>
+</html>

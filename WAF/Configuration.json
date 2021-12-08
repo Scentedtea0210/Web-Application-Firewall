@@ -1,0 +1,1 @@
+{"WebServerIP": "192.168.238.129", "WebServerPort": 5000, "Model": "Transparent", "FirewallIP": "192.168.238.129", "FirewallPort": 8080, "GUI": "True", "LogSystem": "True", "DatabasePath": "./DataSet.db", "MachineLearningCore": "../Model/TF-IDF_SVM_V1.0.joblib"}

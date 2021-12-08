@@ -1,0 +1,20 @@
+#Main{
+    height:900px;
+    width:80%;
+    margin:0 auto;
+}
+#Header{
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:10px;
+    margin:0 auto;
+}
+#Left{
+    background-color:#eeeeee;
+    color:black;
+    float:left;
+    padding:10px;
+    width:20%;
+    height:80%;
+}

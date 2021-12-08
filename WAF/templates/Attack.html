@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            Attack Report!
+        </title>
+    </head>
+
+    <body>
+        <h3>Attack Alert</h3>
+        <pre>This is a warning!</pre>
+        <pre>The Firewall has been detected that there are some Malicious Code in REQUEST</pre>
+        <pre>Action has been recoded in the background</pre>
+        <h3>Client Detail</h3>
+        <pre>Timestamp: {{log.Timestamp}}</pre>
+        <pre>SourceIP: {{log.SourceIP}}</pre>
+        <h3>Attack Message</h3>
+        <h4>Threat Type -> Location</h4>
+        {% for key,value in log.ThreatType.items()%}
+        <pre>{{value.strip().split(':')[0]}} -> {{value.strip().split(':')[1]+':'+key}}</pre>
+        {% endfor %}
+    </body>
+</html>
