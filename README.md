@@ -28,3 +28,4 @@
 ##项目参考链接
 
 `https://github.com/vladan-stojnic/ML-based-WAF`
+训练数据以及数据处理代码可私信作者Gmail邮箱 scentedtea210@gmail.com
